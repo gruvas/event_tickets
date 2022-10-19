@@ -1,0 +1,72 @@
+[
+    {
+        "id": "1",
+        "event_id": "003",
+        "ticket_type": "Льготный",
+        "event_date": "2021-08-21 13:00:00",
+        "ticket_adult_price": "700",
+        "ticket_adult_quantity": "1",
+        "ticket_kid_price": "450",
+        "ticket_kid_quantity": "0",
+        "barcode": "11111111",
+        "user_id": "00451",
+        "equal_price": "560",
+        "created": "2021-01-11 13:22:09"
+    },
+    {
+        "id": "2",
+        "event_id": "003",
+        "ticket_type": "Групповой",
+        "event_date": "2021-08-21 13:00:00",
+        "ticket_adult_price": "700",
+        "ticket_adult_quantity": "4",
+        "ticket_kid_price": "450",
+        "ticket_kid_quantity": "0",
+        "barcode": "11111112",
+        "user_id": "00452",
+        "equal_price": "2520",
+        "created": "2021-01-11 13:32:09"
+    },
+    {
+        "id": "3",
+        "event_id": "003",
+        "ticket_type": "Групповой",
+        "event_date": "2021-08-21 13:00:00",
+        "ticket_adult_price": "700",
+        "ticket_adult_quantity": "0",
+        "ticket_kid_price": "450",
+        "ticket_kid_quantity": "3",
+        "barcode": "11111113",
+        "user_id": "00453",
+        "equal_price": "1200",
+        "created": "2021-01-11 14:32:09"
+    },
+    {
+        "id": "4",
+        "event_id": "003",
+        "ticket_type": "",
+        "event_date": "2021-08-21 13:00:00",
+        "ticket_adult_price": "700",
+        "ticket_adult_quantity": "1",
+        "ticket_kid_price": "450",
+        "ticket_kid_quantity": "0",
+        "barcode": "11111113",
+        "user_id": "00454",
+        "equal_price": "700",
+        "created": "2021-01-11 13:22:09"
+    },
+    {
+        "id": "5",
+        "event_id": "006",
+        "ticket_type": "",
+        "event_date": "2021-09-29 18:00:00",
+        "ticket_adult_price": "900",
+        "ticket_adult_quantity": "1",
+        "ticket_kid_price": "550",
+        "ticket_kid_quantity": "0",
+        "barcode": "21111111",
+        "user_id": "00455",
+        "equal_price": "900",
+        "created": "2021-02-13 15:12:09"
+    }
+]

@@ -1,23 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import Table from './component/Table'
+import TableCoefficients from './component/TableCoefficients'
+import TableOrder from './component/TableOrder'
+import TableTicket from './component/TableTicket'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className='container'>
+        <h1>
+          Билеты на событие. Часть 1
+        </h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Для типа билета в таблице создаем дополнительную ячейку под названием ticket_type. 
+          У события может быть несколько типов билетов, у каждого типа могут свои условия покупки.
+          Например, билет с типом льготный можно будет приобрести пенсионерам. 
+          Данный тип позволяет применить коэффициент к общей стоимости 0.8 (умножаем общую стоимость на коэффициент). 
+          Тип групповой можно приобретать от двух человек. Коэффициент у данной группы будет 0.9. 
+          Будет также возможность приобретать билет без типа, со стоимостью 700 
+          (то есть, если человек покупает один билет для взрослого, ему не присваивается тип).
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        
+        <p>
+          PS: Коэффициенты никак не будут отображаться в таблице, он будет заранее прописан в логике приложения. 
+          Можно сделать чтобы коэффициенты хранились в отдельной таблице, откуда и будут браться при расчетах.
+        </p>
+
+        <Table/>
+        <TableCoefficients/>
+
+        <h1>
+          Билеты на событие. Часть 2
+        </h1>
+        <p>
+          Во второй части тип «льготный» вынесен в отдельную стоимость. 
+          Поэтому необходимо в таблице создать два дополнительных поля ticket_concession_price, ticket_concession_quantity.
+        </p>
+
+        <p>
+          Для создания в заказе индивидуального баркода, необходимо создать вторую таблицу, 
+          в которой будет храниться id (уникальный номер записи), 
+          id_order (привязка второй таблицы к таблице заказов), barcode, user_id. 
+          Из первой таблицы будут удалены данные поля: barcode, user_id.
+        </p>
+
+        <TableOrder/>
+        <TableTicket/>
+      </div>
     </div>
   );
 }
